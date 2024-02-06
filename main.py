@@ -1,19 +1,27 @@
-# with open('weather_data.csv') as file:
-#     data = file.readlines()
-#     print(data)
-
-# import csv
-#
-# with open('weather_data.csv') as file:
-#     reader = csv.reader(file)
-#     temperatures = []
-#     for row in reader:
-#         if row[1] != 'temp':
-#             temperatures.append(int(row[1]))
-#     print(temperatures)
-
 import pandas
 
-data = pandas.read_csv('weather_data.csv')
+# data = pandas.read_csv('weather_data.csv')
 # print(data)
-print(data['temp'])
+
+# temp_list = data['temp'].to_list()
+# temp_sum = sum(temp_list)
+# average = temp_sum / len(temp_list)
+# print(average)
+
+# print(data['temp'].mean())
+# print(data['temp'].max())
+# print(data.condition)
+
+# print(data[data.temp == data['temp'].max()])
+#
+# monday = data[data.day == 'Monday']
+# print((monday['temp']*1.8)+32)
+
+# data_dic = {
+#     'students': ['Amy', 'James', 'Angela'],
+#     'scores': [76, 56, 65]
+# }
+#
+# data = pandas.DataFrame(data_dic)
+# print(data)
+# data.to_csv('data.csv')
